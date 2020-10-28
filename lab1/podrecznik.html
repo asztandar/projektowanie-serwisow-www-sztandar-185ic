@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bare - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="myassets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <script src="myassets/js/dzienNoc.js"></script>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-create float-l">
+          A
+        </div>
+        <span class="float-l">sztandar</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="list.html">List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="podrecznik.html">Podręcznik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formularz.html">Formularz</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-center">
+
+      <div class="text-center page-size">
+        <div class="text-right">
+          <p>Elementy gry <span class="dluzszy-odstep">209</span></p>
+          
+        </div>
+
+        <div class="text-center">
+          <img src="myassets/img/podrecznik-img.png" />
+        </div>
+        
+
+        <p class="text-justify">
+          W tym momencie kula jest ukończona, ale jeszcze nic się nie dzieje. Konieczne jest opracowanie skryptu
+          pozwalającego na przesuwanie kuli po całej arenie. Utwo-rzymy skrypt o nazwie VelocityScript i dołączymy go do
+          kuli chaos bali. Skrypt przenieś do katalogu Scripts. Pełny kod skryptu przedstawiono w listingu 10.1.
+        </p>
+
+        <p class="text-left font-strong">Listing 10.1. Skrypt VelocityScript.cs</p>
+        <hr>
+
+        <br>
+        <div  class="text-left">
+        <code>
+          <pre>
+          using UnityEngine;
+          <br>
+          public class VelocityScript : MonoBehaviour
+          {
+              public float startSpeed = 50f;
+
+              void Start () {
+                Rigidbody rigidBody = GetComponent<code>< Rigibody ></code> ();
+                rigidBody.velocity = new Vector3 (startSpeed, 0 , startSpeed);
+              }
+          }
+        </pre>
+        </code>
+        </div>
+
+        <hr>
+
+        <p class="text-justify">
+          Uruchom scenę i zobacz, jak kula porusza się po arenie. Na tym etapie kula chaos bali jest już gotowa. W
+          panelu Hierarchy powiel tę kulę czterokrotnie. Rozrzuć nowo utworzone kule po arenie (upewnij się, że
+          zmieniają jedynie położenie w zakresie osi X i Z), a ponadto dla każdej z nich zastosuj inną wartość rotacji
+          wokół osi Y. Pamiętaj, że ruch wzdłuż osi Y jest niemożliwy i dlatego każda kula powinna mieć wartość 2 dla
+          osi Y. Na koniec utwórz pusty obiekt gry o nazwie Chaos Balls, umieść go w położeniu (0, 0, 0) i dodaj do
+          niego kule, aby zachować porządek w panelu Hierarchy.
+
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- My scripts -->
+
+</body>
+
+</html>

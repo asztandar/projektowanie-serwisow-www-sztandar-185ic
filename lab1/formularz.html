@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="myassets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-create float-l">
+                    A
+                </div>
+                <span class="float-l">sztandar</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="podrecznik.html">Podręcznik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formularz.html">Formularz</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container my_container">
+
+        <form>
+            <div class="form-group">
+                <label for="adres_email">Podaj swój adres email</label>
+                <input type="email" class="form-control" id="adres_email" placeholder="adres_email@hosting.com">
+            </div>
+            <div class="form-group">
+                <label for="plec">Wybierz swoją płeć</label>
+                <select class="form-control" id="plec">
+                    <option>Kobieta</option>
+                    <option>Mężczyzna</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zwierze_w_domu">Jakie masz zwierze w domu</label>
+                <select multiple class="form-control" id="zwierze_w_domu">
+                    <option>Nie mam 😞</option>
+                    <option>Kot 😻</option>
+                    <option>Pies 🐶</option>
+                    <option>Chomik 🐹</option>
+                    <option>Ryby 🐟</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="o_sobie">Powiedz mi coś o sobie</label>
+                <textarea class="form-control" id="o_sobie" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="plik">Może jakiś pliczek wrzucisz ?</label>
+                <input type="file" class="form-control-file" id="plik">
+            </div>
+            <input class="form-control" type="text" placeholder="Tylko nikogo nie obrażaj !" readonly>
+        </form>
+
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- My scripts -->
+
+</body>
+
+</html>
