@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <!--HEADER start-->
+    <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container">
+      <div class="logoClone">
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-create float-l" id="logo">
+          A
+        </div>
+        <span class="float-l">sztandar</span>
+      </a>
+    </div>
+      
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#zadanie1">Zadanie 1</a>
+          <a class="dropdown-item" href="#zadanie2">Zadanie 2</a>
+          <a class="dropdown-item" href="#zadanie3">Zadanie 3</a>
+          <a class="dropdown-item" href="#zadanie4">Zadanie 4</a>
+          <a class="dropdown-item" href="#zadanie5">Zadanie 5</a>
+          <a class="dropdown-item" href="#zadanie6">Zadanie 6</a>
+          <a class="dropdown-item" href="#zadanie7">Zadanie 7</a>
+          <a class="dropdown-item" href="#zadanie8">Zadanie 8</a>
+          
+        </div>
+      </div>
+  </nav>
+
+    <!--HEADER stop-->
+
+    <!--content start-->
+<div class="container">
+    <p>Zadania:</p>
+    <hr>
+    <div class="zadanie" id="zadanie1">
+        <p>Zadanie nr.1</p>
+        <p>Przyciski zmieniające kolor loga strony.</p>
+        <button onclick="zamienKolorLogoZielony()">Zmień kolor na zielony</button>
+        <button onclick="zamienKolorLogokDomyslny()">Powrót do oryginalnego koloru</button>
+    </div>
+   <hr>
+   <div class="zadanie" id="zadanie2">
+    <p>Zadanie nr.2</p>
+    <p>Przycisk zmieniający kolor loga strony.</p>
+    <button onclick="zamienKolorLogoZielonyDomyslny()" id="buttonZadanie2">Zmień kolor na zielony</button>
+</div>
+
+<hr>
+   <div class="zadanie" id="zadanie3">
+    <p>Zadanie nr.3</p>
+    <p>Przycisk dodajacy logo obok juz istniejącego.</p>
+    <button onclick="klonujLogo()">Dodaj logo</button>
+    
+</div>
+<hr>
+   <div class="zadanie" id="zadanie4">
+    <p>Zadanie nr.4</p>
+    <p>Usuń logo</p>
+    <button onclick="usunLogo()">Usuń logo</button>
+    
+</div>
+<hr>
+   <div class="zadanie" id="zadanie5">
+    <p>Zadanie nr.5</p>
+    <p>Pokoloruj tło na losowy kolor</p>
+    <button onclick="pokolorujTloNaLosowyKolor()">Losuj i koloruj</button>
+    
+</div>
+<hr>
+   <div class="zadanie" id="zadanie6">
+    <p>Zadanie nr.6</p>
+    <p id="zadanie6p">Zmień wielkość czcionki tego teksu</p>
+    <button onclick="zmienWielkoscCzcionki()">Zmień wielkość</button>
+    
+</div>
+
+<hr>
+   <div class="zadanie" id="zadanie7">
+    <p>Zadanie nr.7</p>
+    <div id="zadanie7p">Zmień wielkość czcionki używając suwaka</div>
+    <input type="range" id="myRange" min="5" max="100" value="30" onchange="zmienWielkoscCzcionkiSuwak()">
+    
+</div>
+
+<hr>
+   <div class="zadanie" id="zadanie8">
+    <p>Zadanie nr.8</p>
+    <button type="button" class="btn btn-primary" onclick="zadanie8funkcja()">
+      Notifications <span class="badge badge-light"></span>
+  </button>
+    
+</div>
+
+
+</div>
+
+<script src="js/my/zadania.js"></script>
+</body>
+</html>

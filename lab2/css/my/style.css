@@ -1,0 +1,25 @@
+.navbar-brand img{
+    width: 40px;
+    height: 40px;
+}
+
+.logo-create{
+    
+    position: relative; 
+    height: 40px; 
+    width: 40px; 
+    background-color: #428BCA; 
+    border-radius: 14px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom: 3px;
+    text-align: center;
+    text-decoration-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.float-l{
+    float: left;
+}
