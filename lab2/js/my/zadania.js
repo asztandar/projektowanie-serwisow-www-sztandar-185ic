@@ -1,3 +1,13 @@
+//zadanie 0
+//dodawanie elementów do menu
+let zadaniaWszystkie = document.getElementsByClassName("zadanie");
+let divMenu = document.getElementById("dropdownMenu");
+
+for(let i=0;i<zadaniaWszystkie.length;i++)
+{
+    divMenu.innerHTML += "<a class='dropdown-item' href=#zadanie"+(i+1)+">Zadanie "+(i+1)+"</a>"
+}
+
 //zadanie 1
 function zamienKolorLogoZielony() {
     document.getElementById("logo").style.backgroundColor = "green";
@@ -63,10 +73,11 @@ function zmienWielkoscCzcionki() {
 //zadanie 7
 
 
-var suwak = document.getElementById("myRange");
-var czcionkaP = document.getElementById("zadanie7p");
-var wielkosc, rozmiar;
+
 function zmienWielkoscCzcionkiSuwak() {
+    let suwak = document.getElementById("myRange");
+    let czcionkaP = document.getElementById("zadanie7p");
+    let wielkosc, rozmiar;
     wielkosc = suwak.value;
     rozmiar = wielkosc + "px;";
     czcionkaP.style.fontSize = suwak.value + "px";
@@ -113,3 +124,13 @@ function zmienslajd() {
 }
 
 zmienslajd();
+
+//zadanie 10 zagnieżdżone w dokumencie html.
+
+//zadanie 11:
+
+function zmienWielkoscZaokragleniaKwadratu(){
+    let suwak = document.getElementById("kwadratSuwak");
+    let kwadrat = document.getElementById("kwadrat");
+    kwadrat.style.borderRadius = suwak.value + "%";
+}

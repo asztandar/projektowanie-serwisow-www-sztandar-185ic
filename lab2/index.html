@@ -32,15 +32,8 @@
           aria-haspopup="true" aria-expanded="false">
           Menu
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#zadanie1">Zadanie 1</a>
-          <a class="dropdown-item" href="#zadanie2">Zadanie 2</a>
-          <a class="dropdown-item" href="#zadanie3">Zadanie 3</a>
-          <a class="dropdown-item" href="#zadanie4">Zadanie 4</a>
-          <a class="dropdown-item" href="#zadanie5">Zadanie 5</a>
-          <a class="dropdown-item" href="#zadanie6">Zadanie 6</a>
-          <a class="dropdown-item" href="#zadanie7">Zadanie 7</a>
-          <a class="dropdown-item" href="#zadanie8">Zadanie 8</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdownMenu">
+
 
         </div>
       </div>
@@ -125,30 +118,44 @@
       <div class="calculator-container">
         <div class="calculator">
           <form name="calc" class="calculator">
-          <input class="value" type="text" name="txt" readonly="">
-          <span class="num clear" onclick="document.calc.txt.value =''">C</span>
-          <span class="num" onclick="document.calc.txt.value +='/'">/</span>
-          <span class="num" onclick="document.calc.txt.value +='*'">*</span>
-          <span class="num" onclick="document.calc.txt.value +='7'">7</span>
-          <span class="num" onclick="document.calc.txt.value +='8'">8</span>
-          <span class="num" onclick="document.calc.txt.value +='9'">9</span>
-          <span class="num" onclick="document.calc.txt.value +='-'">-</span>
-          <span class="num" onclick="document.calc.txt.value +='4'">4</span>
-          <span class="num" onclick="document.calc.txt.value +='5'">5</span>
-          <span class="num" onclick="document.calc.txt.value +='6'">6</span>
-          <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
-          <span class="num" onclick="document.calc.txt.value +='3'">3</span>
-          <span class="num" onclick="document.calc.txt.value +='2'">2</span>
-          <span class="num" onclick="document.calc.txt.value +='1'">1</span>
-          <span class="num" onclick="document.calc.txt.value +='0'">0</span>
-          <span class="num" onclick="document.calc.txt.value +='00'">00</span>
-          <span class="num" onclick="document.calc.txt.value +='.'">.</span>
-          <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
-        </form>
+            <input class="value" type="text" name="txt" readonly="">
+            <span class="num clear" onclick="document.calc.txt.value =''">C</span>
+            <span class="num" onclick="document.calc.txt.value +='/'">/</span>
+            <span class="num" onclick="document.calc.txt.value +='*'">*</span>
+            <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+            <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+            <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+            <span class="num" onclick="document.calc.txt.value +='-'">-</span>
+            <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+            <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+            <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+            <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
+            <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+            <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+            <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+            <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+            <span class="num" onclick="document.calc.txt.value +='00'">00</span>
+            <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+            <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+          </form>
         </div>
       </div>
     </div>
 
+
+
+    <hr>
+    <div class="zadanie" id="zadanie11">
+      <p>Zadanie nr.11</p>
+      <p>Zaokrąglony kwadrat</p>
+      <div class="wysrodkuj">
+        <input type="range" id="kwadratSuwak" min="0" max="100" value="0" onchange="zmienWielkoscZaokragleniaKwadratu()">
+        <div class="zaokraglonyKwadrat" id="kwadrat">
+
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <script src="js/my/zadania.js"></script>

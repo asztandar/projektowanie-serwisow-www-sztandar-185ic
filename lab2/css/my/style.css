@@ -7,6 +7,9 @@
     border: 3px black solid;
     padding-bottom: 10px;
     border-style: dotted;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .logo-create{
@@ -112,4 +115,18 @@ form{
 }
 .calculator span.equal{
     background-color: teal;
+}
+
+.wysrodkuj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.zaokraglonyKwadrat{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(12, 103, 131);
 }
