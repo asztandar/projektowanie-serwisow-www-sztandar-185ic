@@ -3,6 +3,12 @@
     height: 40px;
 }
 
+.zadanie{
+    border: 3px black solid;
+    padding-bottom: 10px;
+    border-style: dotted;
+}
+
 .logo-create{
     
     position: relative; 
@@ -22,4 +28,88 @@
 
 .float-l{
     float: left;
+}
+
+.simpleSlider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.sliderImg{
+    width: 800px;
+    height: 500px;
+}
+.slider-list
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	counter-reset: slider-list-counter;
+}
+.slider-list > *
+{
+	cursor: pointer;
+	display: inline-block;
+}
+
+.slider-list > *::before
+{
+	counter-increment: slider-list-counter;
+	content: "[ " counter(slider-list-counter) " ]";
+}
+
+
+.calculator-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color:rgb(33, 101, 133);
+
+}
+.calculator{
+    position: relative;
+    display: grid;
+}
+.calculator .value{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    
+}
+form{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.calculator span{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: #0c2835;
+    place-items: center;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.calculator span:active{
+    background-color: sandybrown;
+    color: #111;
+}
+.calculator span.clear{
+    grid-column: span 2;
+    width: 120px;
+    background-color: slategrey;
+}
+.calculator span.plus{
+    grid-row: span 2;
+    height: 120px;
+}
+.calculator span.equal{
+    background-color: teal;
 }
