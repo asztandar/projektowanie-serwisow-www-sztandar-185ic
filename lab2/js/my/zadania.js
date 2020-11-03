@@ -3,9 +3,8 @@
 let zadaniaWszystkie = document.getElementsByClassName("zadanie");
 let divMenu = document.getElementById("dropdownMenu");
 
-for(let i=0;i<zadaniaWszystkie.length;i++)
-{
-    divMenu.innerHTML += "<a class='dropdown-item' href=#zadanie"+(i+1)+">Zadanie "+(i+1)+"</a>"
+for (let i = 0; i < zadaniaWszystkie.length; i++) {
+    divMenu.innerHTML += "<a class='dropdown-item' href=#zadanie" + (i + 1) + ">Zadanie " + (i + 1) + "</a>"
 }
 
 //zadanie 1
@@ -129,8 +128,65 @@ zmienslajd();
 
 //zadanie 11:
 
-function zmienWielkoscZaokragleniaKwadratu(){
+function zmienWielkoscZaokragleniaKwadratu() {
     let suwak = document.getElementById("kwadratSuwak");
     let kwadrat = document.getElementById("kwadrat");
     kwadrat.style.borderRadius = suwak.value + "%";
+}
+
+//zadanie 12: Zmiana koloru buttona
+
+function zmienKolorButtona12() {
+    let przycisk = document.getElementById("buttonZadanie12");
+    przycisk.style.backgroundColor = "yellow";
+}
+
+//zadanie 13: tło diva
+
+function zmienKolorTlaDiva() {
+    let tlo = document.getElementById("zadanie13");
+    tlo.style.backgroundImage = "url('img/img1.jpg')";
+}
+
+//zadanie 14: zmniejsz diva
+function zmniejszenieDiva() {
+    let zmniejszDiva = document.getElementById("zadanie14");
+    zmniejszDiva.style.width = "200px";
+}
+
+//zadanie 15: zmiana borderu diva
+function zmienBorder() {
+    let borderStyl = document.getElementById("zadanie15");
+    borderStyl.style.borderStyle = "solid";
+}
+
+//zadanie 16: dodanie cienia diva
+function dodajCien() {
+    let myDivShadow = document.getElementById("zadanie16");
+    myDivShadow.style.boxShadow = "20px 20px 10px 10px red";
+}
+
+//zadanie 17: zmienia czionke w calym dokumencie
+function zmienCzcionke() {
+    document.body.style.fontFamily = "'Courgette', cursive";
+}
+
+//zadanie 18: na prawą strone
+function prawaStrona() {
+    document.body.style.textAlign = "right";
+}
+
+//zadanie 19: obracanie strony.
+var temp = 0;
+
+function obrocStrone() { 
+    if(temp == 0){
+        document.body.style.animation = "rotate 10s forwards"; 
+        temp = 1;
+    }else{
+        document.body.style.animation = "none"; 
+        temp = 0;
+    }
+
+  
 }

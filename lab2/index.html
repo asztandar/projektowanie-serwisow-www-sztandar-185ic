@@ -10,11 +10,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  
+
   <!--HEADER start-->
+
+
+
+
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
     <div class="container">
@@ -149,13 +156,104 @@
       <p>Zadanie nr.11</p>
       <p>Zaokrąglony kwadrat</p>
       <div class="wysrodkuj">
-        <input type="range" id="kwadratSuwak" min="0" max="100" value="0" onchange="zmienWielkoscZaokragleniaKwadratu()">
+        <input type="range" id="kwadratSuwak" min="0" max="100" value="0"
+          onchange="zmienWielkoscZaokragleniaKwadratu()">
         <div class="zaokraglonyKwadrat" id="kwadrat">
 
         </div>
       </div>
 
     </div>
+
+    <hr>
+    <div class="zadanie" id="zadanie12">
+      <p>Zadanie nr.12</p>
+      <button type="button" id="buttonZadanie12" onclick="zmienKolorButtona12()">
+        Kliknij mnie a zmienie swój kolor.
+      </button>
+    </div>
+
+
+    <hr>
+    <div class="zadanie" id="zadanie13">
+      <p>Zadanie nr.13</p>
+      <button type="button" onclick="zmienKolorTlaDiva()">
+        Kliknij mnie a zmienie kolor tła tego diva na jakiś ładny obrazek.
+      </button>
+    </div>
+
+    <hr>
+    <div class="zadanie" id="zadanie14">
+      <p>Zadanie nr.14</p>
+      <button type="button" onclick="zmniejszenieDiva()">
+        Kliknij mnie a zmniejsze diva.
+      </button>
+    </div>
+    <hr>
+    <div class="zadanie" id="zadanie15">
+      <p>Zadanie nr.15</p>
+      <button type="button"  onclick="zmienBorder()">
+        Kliknij mnie a zmienie styl obramowania diva.
+      </button>
+    </div>
+
+    <hr>
+    <div class="zadanie" id="zadanie16">
+      <p>Zadanie nr.16</p>
+      <button type="button"  onclick="dodajCien()">
+        Kliknij mnie a dodam cien  diva
+      </button>
+    </div>
+
+    <hr>
+    <div class="zadanie" id="zadanie17">
+      <p>Zadanie nr.17</p>
+      <button type="button"  onclick="zmienCzcionke()">
+        Kliknij mnie a zmienię czcionkę w całym dokumencie.
+      </button>
+    </div>
+
+    <hr>
+    <div class="zadanie" id="zadanie18">
+      <p>Zadanie nr.18</p>
+      <button type="button"  onclick="prawaStrona()">
+        Kliknij mnie a przeniose tekst na prawo.
+      </button>
+    </div>
+
+    <hr>
+    <div class="zadanie" id="zadanie19">
+      <p>Zadanie nr.19</p>
+      <button type="button"  onclick="obrocStrone()">
+        Zawrot głowy.
+      </button>
+    </div>
+
+    <hr>
+    <div class="zadanie" id="zadanie20">
+      <p>Zadanie nr.20</p>
+      <p>Zadanie nr 20 jest w pliku zadania.js jako zadanie nr 0. <br>
+        Dodaje ono elementy do menu na górze strony.
+      </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
 
   <script src="js/my/zadania.js"></script>

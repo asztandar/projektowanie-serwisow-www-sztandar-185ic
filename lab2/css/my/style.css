@@ -3,6 +3,10 @@
     height: 40px;
 }
 
+body{
+    padding-bottom: 50px;
+}
+
 .zadanie{
     border: 3px black solid;
     padding-bottom: 10px;
@@ -129,4 +133,13 @@ form{
     width: 90px;
     height: 90px;
     background-color: rgb(12, 103, 131);
+    
+}
+
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
 }
