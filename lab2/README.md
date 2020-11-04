@@ -37,3 +37,5 @@ __Zadania od 10 do 13__
 
 __Zadania od 14 do 20__
 ![Zadania 14-20](md_img/zadanie14-20dzialanie.png)
+
+# "use strict" użyte w zadaniu 8
