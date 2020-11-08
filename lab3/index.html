@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/my/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!--HEADER start-->
+
+
+
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container">
+      <div class="logoClone">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo-create float-l" id="logo">
+            A
+          </div>
+          <span class="float-l">sztandar</span>
+        </a>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Menu
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdownMenu">
+
+
+        </div>
+      </div>
+  </nav>
+
+
+
+  <div class="container">
+    <div class="zadanie">
+      <p>Podaj tekst a policzę ile ma liter:</p>
+      <input type="text" id="zadanie1">
+      <button onclick="pobierzTekst('zadanie1')">Policz</button>
+      <div id="odpowiedziZad1"></div>
+    </div>
+    <div class="zadanie">
+      <p>Podaj tablicę liczb oddzielonych od siebie ";"</p>
+      <p class="warning">Uwaga, na samym końcu również wpisz znak ";"</p>
+      <input type="text" id="zadanie2">
+      <button onclick="pobierzTekst('zadanie2')">Sumuj</button>
+      <div id="odpowiedziZad2"></div>
+    </div>
+    <div class="zadanie">
+      <p>Wprowadź tekst a zmiksuje wielkość liter:</p>
+      <input type="text" id="zadanie3">
+      <button onclick="pobierzTekst('zadanie3')">Miksuj</button>
+      <div id="odpowiedziZad3"></div>
+    </div>
+    <div class="zadanie">
+      <p>Wprowadź dwa atrybuty a ja zwócę ich iloczyn jak będą liczbami:</p>
+      <input type="text" id="zadanie4">
+      <input type="text" id="zadanie4input2">
+      <button onclick="pobierzTekst('zadanie4')">Sprawdź i licz</button>
+      <div id="odpowiedziZad4"></div>
+    </div>
+    <div class="zadanie">
+      <p>Wprowadź imię i miesiąc (z polskimi znakami):</p>
+      <input type="text" id="zadanie5" placeholder="Wpisz imię">
+      <input type="text" id="zadanie5input2" placeholder="Wpisz miesiąc">
+      <button onclick="pobierzTekst('zadanie5')">Wykonaj</button>
+      <div id="odpowiedziZad5"></div>
+    </div>
+    <div class="zadanie">
+      <p>Wpisz imiona oddzielone jakimś znakiem a dostaniesz posortowane imiona:</p>
+      <input type="text" id="zadanie6" placeholder="Wpisz imiona oddzielone znakiem">
+      <input type="text" id="zadanie6input2" placeholder="Wpisz znak który oddziela imiona">
+      <button onclick="pobierzTekst('zadanie6')">Wykonaj</button>
+      <div id="odpowiedziZad6"></div>
+    </div>
+    <div class="zadanie">
+      <p>Wpisz imiona oddzielone jakimś znakiem a dostaniesz imiona z wielkimi literami oraz mieszaną wielkością:</p>
+      <input type="text" id="zadanie7" placeholder="Wpisz imiona oddzielone znakiem">
+      <input type="text" id="zadanie7input2" placeholder="Wpisz znak który oddziela imiona">
+      <button onclick="pobierzTekst('zadanie7')">Wykonaj</button>
+      <div id="odpowiedziZad7"></div>
+    </div>
+    <div class="zadanie">
+      <p>Wpisz imię a powiem Ci jaka jest płeć:</p>
+      <input type="text" id="zadanie8" placeholder="Wpisz imię">
+      <button onclick="pobierzTekst('zadanie8')">Sprawdź płeć</button>
+      <div id="odpowiedziZad8"></div>
+    </div>
+    <div class="zadanie">
+      <p>Wprowadź imiona: </p>
+      <input type="text" id="zadanie9" placeholder="Wpisz imiona">
+      <input type="text" id="zadanie9input2" placeholder="Wpisz znak który oddziela imiona"> 
+      <button onclick="pobierzTekst('zadanie9')">Wykonaj</button>
+      <div id="odpowiedziZad9"></div>
+    </div>
+  </div><!--koniec diva container-->
+
+
+  <script src="js/my/zadaniaFunkcje.js"></script>
+</body>
+
+</html>
