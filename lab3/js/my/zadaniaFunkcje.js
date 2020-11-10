@@ -136,7 +136,7 @@ function pobierzTekst(tekst) {
             break;
 
         case "zadanie3":
-            document.getElementById("odpowiedziZad4").innerHTML = "Tekst pomiksowany: " + zadanie3Miksuj(pobranyTekst.value);
+            document.getElementById("odpowiedziZad3").innerHTML = "Tekst pomiksowany: " + zadanie3Miksuj(pobranyTekst.value);
             break;
 
         case "zadanie4":
@@ -159,7 +159,7 @@ function pobierzTekst(tekst) {
             document.getElementById("odpowiedziZad7").innerHTML += zadanie7mix(pobranyTekst.value, oddzielnik.value);
             break;
         case "zadanie8":
-            document.getElementById("odpowiedziZad8").innerHTML = checkFemale(pobranyTekst.value.toLowerCase());
+            document.getElementById("odpowiedziZad8").innerHTML = (checkFemale(pobranyTekst.value.toLowerCase())==true)?"kobieta":"mężczyzna";
             break;
         case "zadanie9":
             let znakOddzielajacy = document.getElementById("zadanie9input2");
