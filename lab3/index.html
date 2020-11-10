@@ -105,11 +105,78 @@
     <div class="zadanie">
       <p>Wprowadź imiona: </p>
       <input type="text" id="zadanie9" placeholder="Wpisz imiona">
-      <input type="text" id="zadanie9input2" placeholder="Wpisz znak który oddziela imiona"> 
+      <input type="text" id="zadanie9input2" placeholder="Wpisz znak który oddziela imiona">
       <button onclick="pobierzTekst('zadanie9')">Wykonaj</button>
       <div id="odpowiedziZad9"></div>
     </div>
-  </div><!--koniec diva container-->
+    <hr class="hr-big">
+    <div class="zdarzenia zadanie" id="zdarzenie1">
+      <p>Sezamie otworz sie!A nie czekaj... może pin wpiszę(1234):</p>
+      <input type="text" id="zdarzenie1input" placeholder="pin to 1234">
+      <br>
+      <img src="img/zdarzenie1-zamkniete.png" id="zdarzenie1Img" />
+    </div>
+    <div class="zdarzenia zadanie" id="zdarzenie2">
+      <form>
+        <div class="form-group">
+          <label for="adres_email">Podaj swój adres email</label>
+          <input type="email" class="form-control" id="adres_email" placeholder="adres_email@hosting.com">
+        </div>
+
+        <div class="form-group">
+          <label for="o_sobie">Powiedz mi coś o sobie</label>
+          <textarea class="form-control" id="o_sobie" rows="3"></textarea>
+        </div>
+        <button id="zdarzenie2resetuj" class="btn btn-primary">Resetuj</button>
+      </form>
+    </div>
+    <div class="zdarzenia zadanie" id="zdarzenie3">
+      <p>Współrzędne kursora to:</p>
+      <p id="wspolrzedneX"></p>
+      <p id="wspolrzedneY"></p>
+    </div>
+    <div class="zdarzenia zadanie" id="zdarzenie4">
+      <p>Zapukaj w drzwi(kliknij raz a potem dwa razy)</p>
+      <img src="" id="zdarzenie4dzwiPukanie" class="obrazekWPionie"/>
+      <img src="img/drzwi.png" id="zdarzenie4drzwi" class="obrazekWPionie"/>
+    </div>
+    <div class="zdarzenia zadanie" id="zdarzenie5">
+      <p>Naciśnij na klawiaturze "!" i zobacz co się stanie.</p> 
+    </div>
+    <div class="zdarzenia zadanie" id="zdarzenie6">
+      <p>Skopiuj tekst który znajduje się poniżej i wklej do pola tekstowego</p>
+      <p>(zwróć uwagę na ostatnią linijkę wklejonego tekstu)</p>
+      <p id="zdarzenie6kopiowany">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta optio quis delectus assumenda,
+        <br> placeat repellat nisi illum officiis, distinctio sint! Molestias voluptatem vero fugit sed quos officiis nesciunt repellendus?</p> 
+        <textarea></textarea>
+    </div>
+    <div class="zdarzenia zadanie" id="zdarzenie7">
+     <p id="zdarzenie7p">Ten przycisk możesz kliknąć tylko raz!</p>
+     <button id="zdarzenie7Przycisk">Kliknij mnie</button>
+     
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <!--koniec diva container-->
 
 
   <script src="js/my/zadaniaFunkcje.js"></script>

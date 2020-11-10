@@ -54,3 +54,32 @@ form{
     font-weight: 900;
     color: #ff0000;
 }
+.hr-big{ 
+    border-top: 10px dotted green;
+     
+}
+#zdarzenie1input{
+    background-color: cadetblue;
+    color: darkred;
+}
+#zdarzenie1input:disabled{
+    background-color: rgb(62, 108, 168);
+    
+}
+#kwadrat{
+    width: 80px;
+    height: 80px;
+    background-color: deepskyblue;
+    
+}
+.obrazekWPionie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3ox;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+}
