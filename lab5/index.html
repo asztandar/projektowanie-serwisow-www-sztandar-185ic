@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/my/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!--HEADER start-->
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container">
+      <div class="logoClone">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo-create float-l" id="logo">
+            A
+          </div>
+          <span class="float-l">sztandar</span>
+        </a>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Menu
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdownMenu">
+
+
+        </div>
+      </div>
+  </nav>
+
+  <!--HEADER stop-->
+
+  <!--content start-->
+  <div class="container">
+    <h1>Lab 5:</h1>
+    <hr>
+    <div class="zadanie" id="zadanie1">
+      <h2>Zadanie nr.1 - funkcja zwrotna (callback)</h2>
+      <h3>Treść zadania:</h3>
+      <blockquote cite="https://zacniewski.gitlab.io/teaching/2020-serwisy-www/">
+        <cite>
+          <ul>
+            <li>przykłady tworzenia funkcji zwrotnych: tutaj i tutaj,</li>
+            <li>utwórz obiekt JSON, zawierający w środku co najmniej podwójnie zagnieżdżone obiekty JSON;</li>
+            <li>ww. obiekty powinny zawierać w tablicach i wartościach obiektów liczby i łańcuch znakowe,</li>
+            <li>task1: wykorzystaj funkcję zwrotną do pobrania dwóch różnych wartości liczbowych (z różnych poziomów
+              zagnieżdżenia) z ww. obiektu JSON i wykonaj wybrane działanie na tych liczbach,</li>
+            <li>task 2: wykorzystaj funkcję zwrotną do pobrania dwóch różnych łańcuchów znakowych (z różnych poziomów
+              zagnieżdżenia) z ww. obiektu JSON i za pomocą template strings stwórz łańcuch znakowy z użyciem obu
+              wcześniej wyekstrahowanych łańcuchów znakowych.</li>
+          </ul>
+        </cite>
+      </blockquote>
+      <br />
+      <h3>Rozwiązanie:</h3> 
+      <div id="zadanie1-rozwiazanie">
+        <p class="zadanie1-rozwiazanie-p"></p>
+
+        <p class="zadanie1-rozwiazanie-p"></p>
+      </div>
+    </div>
+    <hr>
+    <div class="zadanie" id="zadanie2">
+      <h2>Zadanie nr.2 - obiekt Promise (resolve, reject) z metodami then(), catch() i finally() + axios (lub fetch)</h2>
+      <h3>Treść zadania:</h3>
+      <blockquote cite="https://zacniewski.gitlab.io/teaching/2020-serwisy-www/">
+        <cite>
+          <ul>
+            <li>task 1: wykorzystaj obiekt Promise do pobrania dwóch różnych zasobów liczbowych i napisz funkcję wykonującą wybrane działanie na tych liczbach,</li>
+            <li>task 2: wykorzystaj obiekt Promise do pobrania dwóch różnych dowolnych zasobów i napisz funkcję tworzącą z nich nowy obiekt,</li>
+            <li>należy pamiętać o obsłudze wszystkich pięciu metod obiektu Promise,</li>
+            <li>do pobierania zasobów należy wykorzystać metodę fetch lub bibliotekę axios</li> 
+          </ul>
+        </cite>
+      </blockquote>
+      <br />
+      <h3>Rozwiązanie:</h3>
+      <p> Pobieram dwa różne ID i mnożę je przez siebie.</p>
+      <p class="zadanie2-rozwiazanie"></p>
+      <p class="zadanie2-rozwiazanie"></p>
+      <p class="zadanie2-rozwiazanie"></p>
+      <hr class="miedzy-zadaniami" />
+      <p> Pobieram dwa różne tytuły  i tworzę z nich jeden.</p>
+      <p class="zadanie2-rozwiazanie"></p>
+      <p class="zadanie2-rozwiazanie"></p>
+      <p class="zadanie2-rozwiazanie"></p>
+    </div>
+    <hr>
+    <div class="zadanie" id="zadanie3">
+      <h2>Zadanie nr.3 - async/await + fetch (lub axios)</h2>
+      <h3>Treść zadania:</h3>
+      <blockquote cite="https://zacniewski.gitlab.io/teaching/2020-serwisy-www/">
+        <cite>
+          <ul>
+            <li>task 1: jak wyżej,</li>
+            <li>task 2: jak wyżej,</li>
+            <li>należy stworzyć funkcje wykorzystujące składnię async/await,</li>
+            <li>do pobierania zasobów należy wykorzystać metodę fetch lub bibliotekę axios</li> 
+          </ul>
+        </cite>
+      </blockquote>
+      <br />
+      <h3>Rozwiązanie:</h3>
+      <p> Liczę ile zdjęć jest w albumie o ID=1, ile jest w albumie o ID=2 i odejmuję większą wartość od mniejszej</p>
+      <p class="zadanie3-rozwiazanie"></p>
+      <p class="zadanie3-rozwiazanie"></p>
+      <p class="zadanie3-rozwiazanie"></p>
+      <hr class="miedzy-zadaniami" />
+      <p> Pobieram dwa różne tytuły  i tworzę z nich jeden.</p>
+      <p class="zadanie3-rozwiazanie"></p>
+      <p class="zadanie3-rozwiazanie"></p>
+      <p class="zadanie3-rozwiazanie"></p>
+    </div>
+    <hr>
+    <div class="zadanie" id="zadanie4">
+      <h2>Zadanie nr.4 - Zapytania AJAX</h2>
+      <h3>Treść zadania:</h3>
+      <blockquote cite="https://zacniewski.gitlab.io/teaching/2020-serwisy-www/">
+        <cite>
+          <ul>
+            <li>task 1: jak w pkt. 2 i 3</li>
+            <li>task 2: jak w pkt. 2 i 3</li>
+            <li>należy obsłużyć sukces zapytania (właściwość ‘onload’ obiektu XHR),</li>
+            <li>należy obsłużyć błąd zapytania (właściwość ‘onerror’ obiektu XHR).</li> 
+          </ul>
+        </cite>
+      </blockquote>
+      <br />
+      <h3>Rozwiązanie:</h3>
+      <p>Podzielimy wszystkie posty przez ilość postów usera o id = 1:</p>
+      <p class="zadanie4-rozwiazanie"></p>
+      <p class="zadanie4-rozwiazanie"></p>
+      <p class="zadanie4-rozwiazanie"></p>
+      <hr class="miedzy-zadaniami" />
+      <p> Wyświetlimy wszystkie komentarze usera o id=1: </p>
+      <p class="zadanie4-rozwiazanie"></p>
+      <p class="zadanie4-rozwiazanie"></p>
+      <p class="zadanie4-rozwiazanie"></p>
+    </div>
+    <hr>
+    <div class="zadanie" id="zadanie5">
+      <h2>Zadanie nr.5 - metoda fetch</h2>
+      <h3>Treść zadania:</h3>
+      <blockquote cite="https://zacniewski.gitlab.io/teaching/2020-serwisy-www/">
+        <cite>
+          <ul>
+            <li>task 1: jak w pkt. 2 i 3,</li>
+            <li>task 2: jak w pkt. 2 i 3,</li>
+            <li>nie używamy async/await.</li>
+          </ul>
+        </cite>
+      </blockquote>
+      <br />
+      <h3>Rozwiązanie:</h3>
+      <p>Dodamy wszystkie id albumu o id=1:</p>
+      <p class="zadanie5-rozwiazanie"></p>
+      <p class="zadanie5-rozwiazanie"></p>
+      <p class="zadanie5-rozwiazanie"></p>
+      <hr class="miedzy-zadaniami" />
+      <p> Wyświetlam co drugie słowo tytułu zdjęcia w albumie id=1 zdjęcia o id=1:</p>
+      <p class="zadanie5-rozwiazanie"></p>
+      <p class="zadanie5-rozwiazanie"></p>
+      <p class="zadanie5-rozwiazanie"></p>
+    </div>
+    <hr>
+    <div class="zadanie" id="zadanie6">
+      <h2>Zadanie nr.6 - Zapytania AJAX</h2>
+      <h3>Treść zadania:</h3>
+      <blockquote cite="https://zacniewski.gitlab.io/teaching/2020-serwisy-www/">
+        <cite>
+          <ul>
+            <li>task 1: jak w pkt. 2 i 3,</li>
+            <li>task 2: jak w pkt. 2 i 3</li>
+            <li>obiekt axios dostępny będzie jako response.data (patrz przykłady),</li>
+            <li>nie używamy async/await.</li> 
+            <li>wystarczy użyć plików z CDN, opisanych w linku do biblioteki i umieścić je przed końcem sekcji ‘body’.</li> 
+          </ul>
+        </cite>
+      </blockquote>
+      <br />
+      <h3>Rozwiązanie:</h3>
+      <p>Mamy albumId = 1. Dodamy jego pierwsze i ostatnie id i wyświetlimy obraze o ID jakie nam wyjdzie z obliczeń.</p>
+      <p class="zadanie6-rozwiazanie"></p>
+      <p class="zadanie6-rozwiazanie"></p>
+      <p class="zadanie6-rozwiazanie"></p>
+      <img id="zadanie6zdj" />
+      <hr class="miedzy-zadaniami" />
+      <p> Połączymy dwa obrazki:</p>
+      <canvas id="myCanvas"></canvas>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/my/zadania.js"></script>
+</body>
+
+</html>

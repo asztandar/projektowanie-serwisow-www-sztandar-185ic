@@ -83,9 +83,9 @@ function draw() {
     for(var i=0;i<pipe.length;i++){
         ctx.drawImage(pipeNorth,pipe[i].x,pipe[i].y);
         ctx.drawImage(pipeSouth,pipe[i].x,pipe[i].y+constant);
-        pipe[i].x -= 5;
+        pipe[i].x -= 6;
         //generowanie nowych "rur"
-        if(pipe[i].x == 825){
+        if(pipe[i].x == 625){
             pipe.push({
                 x : cvs.width,
                 y : Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
