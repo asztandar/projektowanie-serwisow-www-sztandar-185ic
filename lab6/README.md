@@ -6,7 +6,7 @@
 
 
 ### Przedstawienie strony
-__Strona główna__ - Na stronie umieszczone są zadania z tematyki Zdarzenia JavaScript.
+__Strona główna__ - 
 ![](md_img/0.png)
 
 #### Tworzenie komponentów funkcyjnych i klasowych,
