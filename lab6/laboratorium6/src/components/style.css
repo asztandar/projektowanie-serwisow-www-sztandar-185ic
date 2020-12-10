@@ -1,0 +1,56 @@
+header{
+    width: 100%;
+    height: 50px;
+
+    padding-top: 10px;
+   
+    
+    padding-bottom: 5px;
+
+    background-color: #8b8ca0;
+}
+
+.logo-create{ 
+    position: relative; 
+    height: 40px; 
+    width: 40px; 
+    background-color: #428BCA; 
+    border-radius: 14px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom: 3px;
+    text-align: center;
+    text-decoration-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 15%;
+
+}
+
+.float-l{
+    float: left;
+}
+
+.wnetrze{
+    
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; 
+    
+}
+.pod-soba{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.maly-obrazek{
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

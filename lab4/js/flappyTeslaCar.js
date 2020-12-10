@@ -3,8 +3,8 @@ var cvs = document.getElementById("canvas");
 //tworzymy kontekst
 var ctx = cvs.getContext('2d');
 //rozciągamy nasz konteksty (płótno) na cały ekran
-cvs.width = window.innerWidth - 1;
-cvs.height = window.innerHeight - 10;
+//cvs.width = window.innerWidth - 1;
+//cvs.height = window.innerHeight - 10;
 
 // inicjalizujemy obrazy 
 var bird = new Image();
@@ -78,30 +78,29 @@ function draw() {
     if (punkty == 10)
         inicjalizujObiekty(10);
     //rysuj tlo
-    ctx.drawImage(bg, 0, 0, bg.width, bg.height, 0, 0, cvs.width, cvs.height);
+    ctx.drawImage(bg, 0, 0);
     //rysuj "rury"
-    for(var i=0;i<pipe.length;i++){
+    for(var i=0;i<pipe.length;i++)
+    {
         ctx.drawImage(pipeNorth,pipe[i].x,pipe[i].y);
         ctx.drawImage(pipeSouth,pipe[i].x,pipe[i].y+constant);
-        pipe[i].x -= 6;
-        //generowanie nowych "rur"
-        if(pipe[i].x == 625){
+        pipe[i].x--;
+        if(pipe[i].x==275){
             pipe.push({
-                x : cvs.width,
-                y : Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
-            });
+                x:cvs.width,
+                y:Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
+            }); 
         }
-        //kolizja
+        //kolizje
         if( birdX + bird.width >= pipe[i].x && birdX <= pipe[i].x + pipeNorth.width && (birdY <= pipe[i].y + pipeNorth.height || birdY+bird.height >= pipe[i].y+constant) || birdY + bird.height >=  cvs.height - fg.height){
-            
-           location.reload(); // załadowanie strony na nowo
+            location.reload();
         }
         if(pipe[i].x == 5){
-            punkty++;
-            
+            punkty++; 
         }
+
     }
-     
+    
     //rysuj dol tla 
     ctx.drawImage(fg, 0, cvs.height - fg.height, cvs.width, cvs.width);
     //rysuj "ptaka"
@@ -110,7 +109,7 @@ function draw() {
     birdY += grawitacja;
     //wynik
     ctx.fillStyle = "#000";
-    ctx.font = "20px Verdana";
+    ctx.font = "20px Arial";
     ctx.fillText("Aktualne punkty : "+punkty,10,cvs.height-20);
  
 
