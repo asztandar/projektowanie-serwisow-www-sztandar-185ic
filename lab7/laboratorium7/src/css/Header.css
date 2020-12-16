@@ -1,0 +1,38 @@
+header{
+    background-color: rgb(63, 70, 142) !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    min-height: 50px !important;
+}
+
+
+.logo{ 
+    position: relative; 
+    height: 40px; 
+    width: 40px; 
+    background-color: #428BCA; 
+    border-radius: 14px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    text-align: center;
+    text-decoration-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 5%;
+    
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.menu{
+    margin-right: 4% !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 9px !important;
+}

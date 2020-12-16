@@ -1,0 +1,12 @@
+tileData = [
+    {
+      img: https://i.wpimg.pl/730x0/m.fitness.wp.pl/4-ea52435acc6cf488e05e75c209b2bd.jpg,
+      title: 'Image',
+      author: 'author',
+    },
+    {
+      img: https://cdn.galleries.smcloud.net/t/galleries/gf-afAR-BmSs-Yp7T_jak-zmieniali-sie-sportowcy-mariusz-pudzianowski-664x0-nocrop.jpg,
+      title: 'Image',
+      author: 'author',
+    },
+  ];
