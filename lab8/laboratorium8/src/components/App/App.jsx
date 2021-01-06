@@ -16,17 +16,30 @@ const App = () => {
     storeData('data', state);
     const date = state.map(obj => obj.date);
     const bmi = state.map(obj => obj.bmi);
-    let newData = { date, bmi };
+    const opis = state.map(obj => obj.opis);
+    let newData = { date, bmi, opis };
     setData(newData);
   }, [state]);
+
+
+  
 
   const handleChange = val => {
     let heightInM = val.height / 100;
     val.bmi = (val.weight / (heightInM * heightInM)).toFixed(2);
     val.id = uuidv4();
+    if(val.bmi < 16.0) val.opis = "wygłodzenie";
+    if(val.bmi >= 16.0 && val.bmi<=16.9) val.opis = "wychudzenie";
+    if(val.bmi >= 17.0 && val.bmi<=18.5) val.opis = "niedowaga";
+    if(val.bmi >= 18.6 && val.bmi<=24.9) val.opis = "waga prawidłowa";
+    if(val.bmi >= 25.0 && val.bmi<=29.9) val.opis = "nadwaga";
+    if(val.bmi >= 30.0) val.opis = "otyłość";
+    console.log("bmi ", val.bmi);
+    console.log("opis: ", val.opis);
     let newVal = [...state, val];
     let len = newVal.length;
     if (len > 7) newVal = newVal.slice(1, len);
+    
     setState(newVal);
   };
 
@@ -66,6 +79,7 @@ const App = () => {
                       height={info.height}
                       date={info.date}
                       bmi={info.bmi}
+                      opis={info.opis}
                       deleteCard={handleDelete}
                     />
                   ))}

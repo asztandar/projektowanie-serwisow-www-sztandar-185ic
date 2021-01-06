@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Info = ({ weight, height, id, date, bmi, deleteCard }) => {
+const Info = ({ weight, height, id, date, bmi,opis, deleteCard }) => {
   const handleDelete = () => {
     deleteCard(id);
-  };
-
-  return (
+    console.log(spreadExample(...dane));
+  }; 
+  function spreadExample(x,y,z){
+      return x+y*z;
+  }
+  const dane = [weight,height,bmi];
+  return ( 
     <div className="col m6 s12">
       <div className="card">
         <div className="card-content">
@@ -17,6 +21,8 @@ const Info = ({ weight, height, id, date, bmi, deleteCard }) => {
             <span data-test="weight">Weight: {weight} kg</span>
             <span data-test="height">Height: {height} cm</span>
             <span data-test="date">Date: {date}</span>
+            <br />
+            <span>Opis: {opis}</span>
           </div>
 
           <button className="delete-btn" onClick={handleDelete}>
